@@ -1,18 +1,9 @@
+from utils.extract_terms import load_and_clean_corpus
 from GlossaryEntry import GlossaryEntry
 import json
-import os
 
 
 TXT_FILE_PATHS = "corpus"
-
-
-def read_text_files_as_strings():
-    text = ""
-    for file in os.listdir(TXT_FILE_PATHS):
-        if file.endswith('.txt'):
-            with open(os.path.join(TXT_FILE_PATHS, file), 'r', encoding='utf-8') as f:
-                text += f.read() + "\n"
-    return text
 
 
 def save_glossary_to_json(glossary, filename):
@@ -29,6 +20,8 @@ def convert_glossary_to_json(entry_list):
 
 
 def main():
+    words = load_and_clean_corpus(TXT_FILE_PATHS)
+
     entry_list = []
     entry = GlossaryEntry(
         term="Python",
@@ -41,7 +34,7 @@ def main():
 
     glossary_json = convert_glossary_to_json(entry_list)
     save_glossary_to_json(glossary_json, 'glossary.json')
-    
+
 
 if __name__ == "__main__":
     main()
