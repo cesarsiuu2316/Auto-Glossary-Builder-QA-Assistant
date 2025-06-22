@@ -1,0 +1,16 @@
+{
+    "Glossary": {
+        "Python": {
+            "variants": [
+                "py",
+                "python3"
+            ],
+            "tokens": [
+                "programming",
+                "language"
+            ],
+            "definition": "A high-level programming language known for its readability and versatility.",
+            "example": "Python is widely used in web development, data analysis, artificial intelligence, and more."
+        }
+    }
+}
