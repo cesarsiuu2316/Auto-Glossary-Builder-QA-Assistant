@@ -1,0 +1,11 @@
+Machine Learning: Preprocessing, Types, and Common Algorithms
+Machine learning (ML) is a method by which computers learn patterns from data and make predictions or decisions without being explicitly programmed. An ML pipeline usually involves three main stages: data preprocessing, model development, and deployment.
+In data preprocessing, raw data is cleaned, normalized, and transformed. This may involve handling missing values, removing outliers, converting text to numerical values, and engineering features that provide meaningful signals to the model. Proper preprocessing is crucial for good performance.
+There are three main types of ML: supervised, unsupervised, and reinforcement learning. Supervised learning uses labeled data to train models for tasks like classification and regression. Unsupervised learning finds patterns in unlabeled data, such as grouping similar data points (clustering) or reducing dimensionality. Reinforcement learning involves an agent learning through trial and error to maximize rewards in an environment.
+Common ML algorithms include:
+•	Decision Trees, Random Forests, and Gradient Boosted Trees for interpretable models.
+•	Support Vector Machines for classification problems.
+•	K-means for clustering.
+•	Principal Component Analysis (PCA) for dimensionality reduction.
+Model performance is measured using metrics like accuracy, precision, recall, F1-score (for classification), and mean squared error or R² (for regression). Cross-validation ensures the model generalizes well to new data.
+Today’s ML practice emphasizes automation (AutoML), scalability, and model monitoring through MLOps. Tools like scikit-learn, TensorFlow, and cloud ML platforms help streamline development. There’s growing awareness around ethical ML—ensuring models are fair, explainable, and respect data privacy.
