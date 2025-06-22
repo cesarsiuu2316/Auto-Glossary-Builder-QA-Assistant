@@ -41,5 +41,5 @@ pip install -r requirements.txt
 ### 4. Finally, run the following python program to try it:
 
 ```bash
-python cli.py command # Command can be: list, define word, etc.
+python cli.py <command> # Commands: list, define, search, use --help to get more information
 ```
