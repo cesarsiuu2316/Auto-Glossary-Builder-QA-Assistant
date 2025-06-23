@@ -1,6 +1,8 @@
 import click
 import json
 import os
+from Levenshtein import distance
+import numpy as np
 
 
 GLOSSARY_PATH = "glossary.json"  # Path to the glossary JSON file
@@ -14,6 +16,7 @@ def cli(): # This is the main entry point for the click application
     if os.path.exists(GLOSSARY_PATH):
         with open(GLOSSARY_PATH, 'r') as f:
             GLOSSARY_DICT = json.load(f)
+            GLOSSARY_DICT = GLOSSARY_DICT.get("Glossary", {})
     pass
 
 
@@ -25,7 +28,7 @@ def listw(count):
         click.echo("No glossary entries found.")
         return
     # Get the entries from the glossary dictionary
-    entries = list(GLOSSARY_DICT.get("Glossary", {}).items())[:count]
+    entries = list(sorted(GLOSSARY_DICT.items()))[:count]
     # Print the header
     click.echo(f"{'Term':<45} {'# of Variants'}")
     click.echo("-" * 60)
@@ -39,14 +42,30 @@ def listw(count):
 @click.argument('word') # This is a command that takes an argument
 def define(word):
     """Define WORD in glossary."""
-    click.echo(f"Defining: {word}")
+    click.echo(
+        f"Canonical: {word}\n"
+        f"Definition: {GLOSSARY_DICT[word]['definition'] if word in GLOSSARY_DICT else 'Not found'}\n"
+        f"Example: {GLOSSARY_DICT[word]['example'] if word in GLOSSARY_DICT else 'Not found'}"
+    )
 
 
 @cli.command() # Converts the function into a click command
-@click.argument('word') # This is a command that takes an argument
-def search(word):
+@click.argument('words', nargs=-1) # This is a command that takes an argument
+def search(words):
     """Search WORD in glossary."""
-    click.echo(f"Searching for: {word}")
+    word = ""
+    for w in words:
+        word += w + " "
+    distances = []
+    for i in range(len(GLOSSARY_DICT)):
+        term = list(GLOSSARY_DICT.keys())[i]
+        dist = distance(word, term)
+        distances.append(dist)
+    match = np.argmin(distances)
+    closest_term = list(GLOSSARY_DICT.keys())[match]
+    click.echo(
+        f"Closest match: {closest_term if closest_term == word else f'{closest_term}'}"
+    )
 
 
 if __name__ == "__main__":

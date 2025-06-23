@@ -1,3 +1,4 @@
 tokenizers
 click
 python-Levenshtein
+numpy
