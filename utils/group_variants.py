@@ -1,10 +1,11 @@
 from Levenshtein import distance
 from collections import Counter
+import re
 
 
 # Get the term and its variants from the corpus
-def get_terms_with_variants(corpus, max_distance=3):
-    word_counts = Counter(corpus)  # Count the occurrences of each word in the corpus
+def get_terms_with_variants(terms, max_distance=3):
+    word_counts = Counter(terms)  # Count the occurrences of each word in the corpus
     words = list(word_counts.keys())  # Extract the unique words from the corpus
     visited = set()  # Keep track of words already grouped to avoid duplicates
     terms_dictionary = {}  # Initialize an empty dictionary to hold terms and their variants
@@ -12,6 +13,14 @@ def get_terms_with_variants(corpus, max_distance=3):
     for word1 in words:  # Loop through each word
         if word1 in visited:
             continue  # Skip words we've already grouped
+        
+        # Check if the word is an Acronym, if so store it directly
+        if re.fullmatch(r'[A-Z]{2,}', word1):
+            terms_dictionary[word1] = {
+                "variants": []
+            }
+            visited.add(word1)
+            continue
 
         variants = []  # Initialize a list to store similar variants
         for word2 in words:  # Compare with every other word
@@ -19,6 +28,7 @@ def get_terms_with_variants(corpus, max_distance=3):
                 continue  # Skip already grouped words
 
             if distance(word1, word2) <= max_distance:  # Check if words are similar enough
+
                 variants.append(word2)  # Add as a variant
                 visited.add(word2) # Mark word as grouped
 
@@ -28,6 +38,5 @@ def get_terms_with_variants(corpus, max_distance=3):
         terms_dictionary[term] = {
             "variants": [v for v in variants if v != term]  # Store the other variants
         }
-        print(f"Term: {term}, Variants: {terms_dictionary[term]['variants']}")
 
     return terms_dictionary # Return the final dictionary with terms and their variants

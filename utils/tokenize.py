@@ -7,12 +7,11 @@ import re
 import os
 
 
-TOKENIZER_PATH = "tokenizer.json"
+TOKENIZER_PATH = "./tokenizer.json"
 
 
 # Load the tokenizer from a file if it exists
 def load_tokenizer_from_file():
-    path = "tokenizer.json"  # Path to the tokenizer file
     if os.path.exists(TOKENIZER_PATH):
         tokenizer = Tokenizer.from_file(TOKENIZER_PATH) # Ensure the tokenizer file exists
         return tokenizer
@@ -50,13 +49,12 @@ def train_tokenizer(corpus):
     tokenizer = initialize_tokenizer()  # Initialize the tokenizer
     # Set up the trainer with specific parameters
     trainer = BpeTrainer(
-        vocab_size=100,  # Set vocabulary size
+        vocab_size=400,  # Set vocabulary size
         min_frequency=1,  # Minimum frequency for tokens to be included
         special_tokens=["[UNK]"]  # Define special tokens
     )
     tokenizer.train_from_iterator([cleaned_corpus], trainer=trainer) # Train the tokenizer
     save_tokenizer_to_file(tokenizer)  # Save the trained tokenizer to a file
-    tokenizer.encode_bat
     return tokenizer  # Return the trained tokenizer
 
 

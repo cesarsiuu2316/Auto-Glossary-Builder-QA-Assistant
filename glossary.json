@@ -1,16 +1,1199 @@
 {
     "Glossary": {
-        "Python": {
+        "multi_step": {
             "variants": [
-                "py",
-                "python3"
+                "multi-step"
             ],
             "tokens": [
-                "programming",
-                "language"
+                "multi",
+                "ste",
+                "p"
             ],
-            "definition": "A high-level programming language known for its readability and versatility.",
-            "example": "Python is widely used in web development, data analysis, artificial intelligence, and more."
+            "definition": "Multi-Step instruction involves executing a series of actions or steps in order.",
+            "example": "A recipe often requires multi-step instructions to prepare food."
+        },
+        "natural_language_processing": {
+            "variants": [],
+            "tokens": [
+                "natural",
+                "language",
+                "processing"
+            ],
+            "definition": "Natural Language Processing (NLP) is a field of AI that gives machines the ability to read, understand and derive meaning from human language.",
+            "example": "Google uses NLP techniques for its search engine to comprehend user queries."
+        },
+        "convolutional_nets": {
+            "variants": [],
+            "tokens": [
+                "convolution",
+                "al",
+                "ne",
+                "ts"
+            ],
+            "definition": "Convolutional Neural Networks are deep learning architectures used primarily for image processing.",
+            "example": "Deep learning models process images using Convolutional Neural Networks."
+        },
+        "machine_learning": {
+            "variants": [
+                "machine-learning"
+            ],
+            "tokens": [
+                "machine",
+                "learning"
+            ],
+            "definition": "Machine learning enables computers to learn from data and improve without explicit programming.",
+            "example": "An email filtering system uses machine learning algorithms to distinguish spam emails automatically."
+        },
+        "pre_processing": {
+            "variants": [
+                "pre-processing"
+            ],
+            "tokens": [
+                "pre",
+                "processing"
+            ],
+            "definition": "Pre-processing involves preparing data for analysis or input into a model.",
+            "example": "Data scientists apply pre-processing techniques to clean and normalize datasets before feeding them into machine learning algorithms."
+        },
+        "data_cleaning": {
+            "variants": [],
+            "tokens": [
+                "dat",
+                "ac",
+                "le",
+                "an",
+                "ing"
+            ],
+            "definition": "Data cleaning involves detecting and correcting (or removing) errors in data.",
+            "example": "The company performs regular data cleaning to ensure the accuracy of their customer database."
+        },
+        "Agent-to-Agent": {
+            "variants": [
+                "Agent To Agent"
+            ],
+            "tokens": [
+                "agent",
+                "to",
+                "agent"
+            ],
+            "definition": "Agent-to-Agent is a communication model where one AI agent communicates directly with another.",
+            "example": "In an online multiplayer game, Agent Alpha sends real-time strategy updates to Agent Beta using the Agent-to-Agent communication protocol."
+        },
+        "decision-making": {
+            "variants": [],
+            "tokens": [
+                "decision",
+                "ma",
+                "king"
+            ],
+            "definition": "Decision making in artificial intelligence involves selecting actions based on data and predefined rules.",
+            "example": "An AI system uses decision trees to decide the optimal route for delivery drones."
+        },
+        "multi-agent": {
+            "variants": [],
+            "tokens": [
+                "multi",
+                "agent"
+            ],
+            "definition": "Multi-Agent refers to systems where multiple intelligent entities interact.",
+            "example": "In traffic simulation, cars are modeled as multi-agents that communicate and make decisions."
+        },
+        "AI-based": {
+            "variants": [],
+            "tokens": [
+                "ai",
+                "based"
+            ],
+            "definition": "A system that uses artificial intelligence for automated decision making.",
+            "example": "An AI-based trading algorithm analyzes market trends to make buy and sell decisions in real time."
+        },
+        "real-time": {
+            "variants": [],
+            "tokens": [
+                "re",
+                "al",
+                "ti",
+                "me"
+            ],
+            "definition": "Real-time refers to processes or systems that operate immediately, providing immediate output and input.",
+            "example": "In video conferencing applications like Zoom or Skype, real-time communication allows participants to interact as if they were in the same room."
+        },
+        "plug-ins": {
+            "variants": [],
+            "tokens": [
+                "pl",
+                "u",
+                "g",
+                "in",
+                "s"
+            ],
+            "definition": "Plug-ins are software components that add specific features or capabilities to a larger software system.",
+            "example": "A word processor might use plug-ins for spell checking, grammar correction, and text formatting."
+        },
+        "tool-augmented": {
+            "variants": [
+                "tool-augmentd"
+            ],
+            "tokens": [
+                "tool",
+                "augment",
+                "ed"
+            ],
+            "definition": "Tool-Augmented refers to a system where tools are used in conjunction with AI capabilities.",
+            "example": "The robotic arm uses tool augmentation for precision tasks."
+        },
+        "agent-link": {
+            "variants": [],
+            "tokens": [
+                "agent",
+                "l",
+                "in",
+                "k"
+            ],
+            "definition": "Agent Link refers to a mechanism for connecting and coordinating different AI systems.",
+            "example": "The Agent Link facilitates communication between various autonomous agents in the network."
+        },
+        "peer-to-peer": {
+            "variants": [],
+            "tokens": [
+                "pe",
+                "er",
+                "to",
+                "pe",
+                "er"
+            ],
+            "definition": "Peer-to-peer is a decentralized network where two or more computers can share resources.",
+            "example": "In a peer-to-peer network, users directly connect to each other's devices for file sharing without needing a central server."
+        },
+        "agent-based": {
+            "variants": [],
+            "tokens": [
+                "agent",
+                "based"
+            ],
+            "definition": "Agent-Based Modeling and Simulation uses autonomous agents that interact within a system to simulate complex phenomena.",
+            "example": "Economists use Agent-Based Models to study market dynamics."
+        },
+        "real-world": {
+            "variants": [],
+            "tokens": [
+                "re",
+                "al",
+                "wor",
+                "l",
+                "d"
+            ],
+            "definition": "Real-world refers to situations, environments or contexts that exist outside of controlled settings.",
+            "example": "The study conducted in a real-world setting allowed researchers to observe natural behaviors."
+        },
+        "context-sharing": {
+            "variants": [],
+            "tokens": [
+                "context",
+                "sh",
+                "ar",
+                "ing"
+            ],
+            "definition": "Context sharing refers to methods and systems that allow for efficient exchange of contextual information among entities.",
+            "example": "In a smart home, sensors share temperature data with the heating system via context sharing."
+        },
+        "peer-level": {
+            "variants": [],
+            "tokens": [
+                "pe",
+                "er",
+                "le",
+                "ve",
+                "l"
+            ],
+            "definition": "Peer Level refers to interactions or processes occurring at an equivalent level of expertise among individuals.",
+            "example": "In academic discussions, peer reviewers evaluate research papers on a peer level."
+        },
+        "multi-layered": {
+            "variants": [],
+            "tokens": [
+                "multi",
+                "l",
+                "ay",
+                "er",
+                "ed"
+            ],
+            "definition": "Multi-layered refers to a structure or system that consists of multiple levels, often stacked upon one another.",
+            "example": "A multi-layered architecture in software engineering separates concerns into distinct layers for better maintainability and scalability."
+        },
+        "self-driving": {
+            "variants": [],
+            "tokens": [
+                "se",
+                "l",
+                "f",
+                "d",
+                "r",
+                "i",
+                "ving"
+            ],
+            "definition": "Self-driving refers to vehicles that can navigate and operate without human intervention.",
+            "example": "Tesla's Autopilot feature allows the car to steer, accelerate, and brake automatically."
+        },
+        "Cutting-edge": {
+            "variants": [],
+            "tokens": [
+                "c",
+                "ut",
+                "ting",
+                "ed",
+                "g",
+                "e"
+            ],
+            "definition": "Cutting-edge refers to technologies, ideas or methods that are at the forefront of innovation and development.",
+            "example": "The company invested in cutting-edge technology for its new product line."
+        },
+        "Efficient-Net": {
+            "variants": [
+                "EfficientNet"
+            ],
+            "tokens": [
+                "efficient",
+                "net"
+            ],
+            "definition": "Efficient-Net, a family of models optimized for accuracy and efficiency in image classification tasks.",
+            "example": "Researchers used Efficient-Nets to develop lightweight yet highly accurate facial recognition systems."
+        },
+        "Short-Term": {
+            "variants": [],
+            "tokens": [
+                "sh",
+                "or",
+                "t",
+                "ter",
+                "m"
+            ],
+            "definition": "Short-term refers to a limited period, often used in finance and economics.",
+            "example": "Investors focus on short-term gains for immediate returns."
+        },
+        "long-range": {
+            "variants": [],
+            "tokens": [
+                "l",
+                "ong",
+                "r",
+                "ang",
+                "e"
+            ],
+            "definition": "Long-range refers to distances that are significantly greater than immediate surreneroundings, often used in navigation and communication.",
+            "example": "When planning a cross-country road trip, it's important to consider fuel stops at long range intervals."
+        },
+        "self-attention": {
+            "variants": [],
+            "tokens": [
+                "se",
+                "l",
+                "f",
+                "at",
+                "t",
+                "en",
+                "tion"
+            ],
+            "definition": "Self-attention in neural networks allows a model to weigh the importance of different words within a sentence.",
+            "example": "In natural language processing, self-attention helps models understand context by assigning weights."
+        },
+        "GPT-series": {
+            "variants": [],
+            "tokens": [
+                "g",
+                "p",
+                "t",
+                "ser",
+                "ies"
+            ],
+            "definition": "The GPT (Generative Pre-trained Transformer) series includes AI models like GPT, BERT, and their variants.",
+            "example": "Researchers use the GPT model to generate human-like text."
+        },
+        "transformer-style": {
+            "variants": [],
+            "tokens": [
+                "transform",
+                "er",
+                "s",
+                "ty",
+                "le"
+            ],
+            "definition": "Transformer style refers to a neural network architecture that relies on self-attention mechanisms.",
+            "example": "The Transformer model uses transformer style for natural language processing tasks."
+        },
+        "encoder-decoder": {
+            "variants": [],
+            "tokens": [
+                "enco",
+                "der",
+                "de",
+                "co",
+                "der"
+            ],
+            "definition": "Encoder-Decoder is a framework used in machine learning for tasks that involve generating sequences, such as translation.",
+            "example": "In language translation apps, Encoder-Decoder models convert text from one language to another."
+        },
+        "sequence-to-sequence": {
+            "variants": [],
+            "tokens": [
+                "sequ",
+                "ence",
+                "to",
+                "sequ",
+                "ence"
+            ],
+            "definition": "Sequence-to-Sequence is a framework in natural language processing for transforming one sequence into another.",
+            "example": "In machine translation, Sequence-to-Sequence models convert sentences from source to target languages."
+        },
+        "diffusion-based": {
+            "variants": [],
+            "tokens": [
+                "di",
+                "f",
+                "f",
+                "us",
+                "ion",
+                "based"
+            ],
+            "definition": "Diffusion-based refers to a process where particles or substances spread out due to random motion.",
+            "example": "The smoke from a chimney undergoes diffusion, dispersing into the surrounding air."
+        },
+        "photo-realistic": {
+            "variants": [],
+            "tokens": [
+                "p",
+                "h",
+                "o",
+                "to",
+                "re",
+                "al",
+                "istic"
+            ],
+            "definition": "Photo-realism in art refers to a style of painting or sculpture that is created so precisely and accurately, it resembles a high-resolution photograph.",
+            "example": "The Mona Lisa by Leonardo da Vinci has often been celebrated for its photo-realistic qualities."
+        },
+        "AI-assisted": {
+            "variants": [],
+            "tokens": [
+                "ai",
+                "as",
+                "sis",
+                "ted"
+            ],
+            "definition": "A system that uses artificial intelligence to provide assistance or support.",
+            "example": "Virtual assistants like Alexa use AI technology for hands-free help with tasks and information."
+        },
+        "transformer-based": {
+            "variants": [],
+            "tokens": [
+                "transform",
+                "er",
+                "based"
+            ],
+            "definition": "Transformer-based refers to a neural network architecture that relies on self-attention mechanisms.",
+            "example": "The BERT model used for natural language processing tasks is based on the transformer architecture."
+        },
+        "large-scale": {
+            "variants": [],
+            "tokens": [
+                "l",
+                "ar",
+                "g",
+                "e",
+                "scal",
+                "e"
+            ],
+            "definition": "Large-scale refers to systems, processes or structures that are extensive in size and/involve a significant volume of resources.",
+            "example": "Google's search engine is an example of large-scale infrastructure."
+        },
+        "pre-trained": {
+            "variants": [],
+            "tokens": [
+                "pre",
+                "train",
+                "ed"
+            ],
+            "definition": "Pre-trained refers to a model that has already been trained on large datasets.",
+            "example": "Deep learning models often use pre-trained weights for faster convergence."
+        },
+        "fine-tuned": {
+            "variants": [],
+            "tokens": [
+                "f",
+                "ine",
+                "t",
+                "un",
+                "ed"
+            ],
+            "definition": "Fine-tuned refers to a process where pretrained models are further trained on smaller, specific datasets for better performance.",
+            "example": "To improve accuracy in image captioning tasks, one might fine-tune an object detection model with domain-specific images."
+        },
+        "well-prepared": {
+            "variants": [],
+            "tokens": [
+                "w",
+                "e",
+                "ll",
+                "pre",
+                "par",
+                "ed"
+            ],
+            "definition": "Well-prepared means having done all necessary planning and gathering of information beforehand.",
+            "example": "A well-prepared speaker presents their material with confidence, knowing the audience is ready for it."
+        },
+        "high-quality": {
+            "variants": [],
+            "tokens": [
+                "hi",
+                "gh",
+                "qu",
+                "al",
+                "ity"
+            ],
+            "definition": "High quality refers to something that is made or produced so accurately, carefully and finely as to meet a standard of excellence.",
+            "example": "The high-quality watch was handcrafted with precision."
+        },
+        "reinforcement-based": {
+            "variants": [],
+            "tokens": [
+                "re",
+                "in",
+                "for",
+                "ce",
+                "ment",
+                "based"
+            ],
+            "definition": "Reinforcement-based learning is a type of machine learning where an agent learns to behave in an environment by performing certain actions and observing the rewards/results.",
+            "example": "In reinforcement-based gaming AI, agents learn optimal strategies through trial and error."
+        },
+        "reward-based": {
+            "variants": [],
+            "tokens": [
+                "re",
+                "w",
+                "ard",
+                "based"
+            ],
+            "definition": "Reward-based learning is a method where an agent learns to perform actions by receiving rewards or penalties.",
+            "example": "In reinforcement learning, agents learn optimal behavior through reward-based feedback."
+        },
+        "long-term": {
+            "variants": [],
+            "tokens": [
+                "l",
+                "ong",
+                "ter",
+                "m"
+            ],
+            "definition": "Long-term refers to a duration that extends well into the future, often spanning months or years.",
+            "example": "Planning for retirement requires considering long-term financial strategies."
+        },
+        "multi-class": {
+            "variants": [],
+            "tokens": [
+                "multi",
+                "clas",
+                "s"
+            ],
+            "definition": "Multi-class refers to a classification problem where objects are categorized into three or more classes.",
+            "example": "In handwriting recognition, multi-class algorithms can differentiate between various characters like 'a', 'b', and 'c'."
+        },
+        "k-means": {
+            "variants": [],
+            "tokens": [
+                "k",
+                "me",
+                "ans"
+            ],
+            "definition": "K-Means is an iterative clustering algorithm that partitions n observations into k clusters.",
+            "example": "In data analysis, we used K-Means to group customers based on their purchasing behavior."
+        },
+        "t-Distributed": {
+            "variants": [],
+            "tokens": [
+                "t",
+                "dis",
+                "tr",
+                "ib",
+                "u",
+                "ted"
+            ],
+            "definition": "T-distributed Stochastic Neighbor Embedding is a statistical method used for visualizing high-dimensional data.",
+            "example": "To understand the complex relationships in our customer purchase patterns, we apply T-SNE."
+        },
+        "t-SNE": {
+            "variants": [
+                "SNE",
+                "RMSE"
+            ],
+            "tokens": [
+                "t",
+                "s",
+                "ne"
+            ],
+            "definition": "t-Distributed Stochastic Neighbor Embedding (t-SNE) is a machine learning algorithm for dimensionality reduction.",
+            "example": "Researchers use t-SNE to visualize high-dimensional data in two or three dimensions."
+        },
+        "high-dimensional": {
+            "variants": [],
+            "tokens": [
+                "hi",
+                "gh",
+                "di",
+                "m",
+                "ens",
+                "ion",
+                "al"
+            ],
+            "definition": "High-dimensional refers to a system that has many variables or parameters.",
+            "example": "In machine learning, high-dimensional data sets often require specialized algorithms for processing and analysis."
+        },
+        "cross-validation": {
+            "variants": [],
+            "tokens": [
+                "c",
+                "ross",
+                "val",
+                "id",
+                "ation"
+            ],
+            "definition": "Cross-validation in machine learning is a technique for assessing how well predictive models perform.",
+            "example": "To evaluate an AI model'seffectiveness, we use cross-validation by dividing the data into training and test sets multiple times."
+        },
+        "k-fold": {
+            "variants": [],
+            "tokens": [
+                "k",
+                "f",
+                "ol",
+                "d"
+            ],
+            "definition": "K-fold cross validation divides a dataset into 'k' independent subsets or folds.",
+            "example": "A data scientist uses k-fold cross validation to test the performance of machine learning models."
+        },
+        "Auto-ML": {
+            "variants": [],
+            "tokens": [
+                "auto",
+                "ml"
+            ],
+            "definition": "Auto-ML automates machine learning processes, including data preprocessing and model selection.",
+            "example": "In predicting house prices, Auto-ML handles cleaning the raw dataset and selecting appropriate regression models."
+        },
+        "Scikit-Learn": {
+            "variants": [],
+            "tokens": [
+                "s",
+                "ci",
+                "k",
+                "it",
+                "learn"
+            ],
+            "definition": "Scikit-learn is an open-source machine learning library for Python.",
+            "example": "Developers often use Scikit-learn to build predictive models."
+        },
+        "cloud-based": {
+            "variants": [],
+            "tokens": [
+                "c",
+                "lo",
+                "u",
+                "d",
+                "based"
+            ],
+            "definition": "Cloud computing uses remote servers hosted on the internet for data processing and storage.",
+            "example": "Companies use cloud services to store their databases, instead of maintaining local servers."
+        },
+        "fairness-aware": {
+            "variants": [],
+            "tokens": [
+                "f",
+                "ai",
+                "rn",
+                "ess",
+                "aw",
+                "are"
+            ],
+            "definition": "Fairness-aware refers to systems or algorithms designed to prevent bias and promote equity in decision making.",
+            "example": "A fairness-aware recommendation system ensures equal representation of diverse content for all users."
+        },
+        "A2Aform": {
+            "variants": [],
+            "tokens": [
+                "a2a",
+                "form"
+            ],
+            "definition": "A2AForm stands for 'Asynchronous-to-Asynchronous Form', which allows data exchange between two AI systems without immediate synchronization.",
+            "example": "'AI system Alpha sends an Asynchronous-to-Asynchronous form to Beta, requesting real-time environmental analysis. Upon receiving it, Beta processes and returns results asynchronously.'"
+        },
+        "ConvNets": {
+            "variants": [],
+            "tokens": [
+                "con",
+                "v",
+                "ne",
+                "ts"
+            ],
+            "definition": "Convolutional Neural Networks (ConvNets) are deep learning architectures primarily used for processing visual data.",
+            "example": "In image recognition tasks, ConvNets can identify and classify objects within an image."
+        },
+        "ResNet": {
+            "variants": [],
+            "tokens": [
+                "res",
+                "net"
+            ],
+            "definition": "Deep residual learning for image recognition.",
+            "example": "The ResNet architecture is widely used in deep neural networks to recognize images without losing accuracy with increased depth of the network."
+        },
+        "TensorFlow": {
+            "variants": [
+                "Tensor Flow"
+            ],
+            "tokens": [
+                "t",
+                "ens",
+                "or",
+                "flow"
+            ],
+            "definition": "TensorFlow is an open-source library for numerical computation and machine learning.",
+            "example": "Scientists use TensorFlow to build neural networks that can recognize patterns in data."
+        },
+        "PyTorch": {
+            "variants": [],
+            "tokens": [
+                "p",
+                "y",
+                "t",
+                "or",
+                "ch"
+            ],
+            "definition": "PyTorch is an open-source machine learning library used for deep learning applications.",
+            "example": "Deep learning models are built and trained with PyTenz, a popular Python package based on PyTorch."
+        },
+        "SageMaker": {
+            "variants": [],
+            "tokens": [
+                "s",
+                "age",
+                "ma",
+                "k",
+                "er"
+            ],
+            "definition": "Amazon SageMaker is a fully managed service that enables data scientists and developers to build, train, and deploy machine learning models quickly.",
+            "example": "Data scientists can use Amazon SageMaker for training deep learning models on large datasets."
+        },
+        "AI": {
+            "variants": [],
+            "tokens": [
+                "ai"
+            ],
+            "definition": "Artificial Intelligence refers to machines capable of mimicking human intelligence.",
+            "example": "Examples include virtual assistants like Siri and Alexa, which use AI."
+        },
+        "MCP": {
+            "variants": [],
+            "tokens": [
+                "mcp"
+            ],
+            "definition": "The MCP, or Modified Consciousness Phase, is a hypothetical state of heightened awareness and cognition in AI.",
+            "example": "During the experimentation phase, some researchers speculate about an AI entering its Modified Consciousness Phase."
+        },
+        "NLP": {
+            "variants": [],
+            "tokens": [
+                "n",
+                "l",
+                "p"
+            ],
+            "definition": "Natural Language Processing (NLP) is a field of AI that enables computers to understand, interpret and generate human language.",
+            "example": "In real life applications like chatbots or voice assistants, NLP techniques are used for understanding user'inquiries."
+        },
+        "CNN": {
+            "variants": [],
+            "tokens": [
+                "cn",
+                "n"
+            ],
+            "definition": "Convolutional Neural Networks (CNN) are deep learning algorithms that can take in an input image, assign importance to various aspects of the image and differentiate one from another.",
+            "example": "In facial recognition systems, CNN is often used for identifying unique features on a person'in face."
+        },
+        "RNN": {
+            "variants": [],
+            "tokens": [
+                "rn",
+                "n"
+            ],
+            "definition": "Recurrent Neural Network (RNN) is a type of artificial neural network where connections between nodes form directed graphs that loop back on themselves.",
+            "example": "In natural language processing, RNNs are used to process and generate text."
+        },
+        "LSTM": {
+            "variants": [],
+            "tokens": [
+                "l",
+                "st",
+                "m"
+            ],
+            "definition": "Long Short-Term Memory (LSTM) is a type of recurrent neural network architecture designed to remember long sequences.",
+            "example": "In language translation, LSTMs are used because they can maintain context over longer sentences."
+        },
+        "GRU": {
+            "variants": [],
+            "tokens": [
+                "gr",
+                "u"
+            ],
+            "definition": "Gated Recurrent Unit (GRU) is a type of recurrent neural network architecture used for processing sequences.",
+            "example": "In natural language processing, GRUs are often utilized to analyze and predict sequential data like text."
+        },
+        "BERT": {
+            "variants": [],
+            "tokens": [
+                "b",
+                "er",
+                "t"
+            ],
+            "definition": "BERT (Bidirectional Encoder Representations from Transformers) is a deep learning model for natural language processing.",
+            "example": "NLP engineers use BERT to understand and generate human-like text."
+        },
+        "GPT": {
+            "variants": [],
+            "tokens": [
+                "g",
+                "p",
+                "t"
+            ],
+            "definition": "GPT (Generative Pre-trained Transformer) is an AI model designed to understand and generate human-like text.",
+            "example": "When you ask GPT a question, it generates coherent responses similar to how humans would."
+        },
+        "ML": {
+            "variants": [],
+            "tokens": [
+                "ml"
+            ],
+            "definition": "Machine Learning involves training algorithms on data, allowing computers to learn and make decisions.",
+            "example": "Self-driving cars use machine learning algorithms to navigate roads safely."
+        },
+        "RL": {
+            "variants": [],
+            "tokens": [
+                "r",
+                "l"
+            ],
+            "definition": "Reinforcement Learning involves training models through rewards and penalties.",
+            "example": "A robot learns to navigate a maze by reinforcing correct paths with positive feedback."
+        },
+        "PCA": {
+            "variants": [],
+            "tokens": [
+                "p",
+                "c",
+                "a"
+            ],
+            "definition": "Principal Component Analysis (PCA) is a statistical procedure that orthogonally transforms the original variables to a new set of uncorrelated variables known as principal components.",
+            "example": "In data analysis, PCA can be used for dimensionality reduction in large datasets by identifying patterns and emphasizing variation."
+        },
+        "AUC": {
+            "variants": [],
+            "tokens": [
+                "au",
+                "c"
+            ],
+            "definition": "Area Under Curve (AUC) is a performance metric used in machine learning.",
+            "example": "To evaluate our model, we calculated its AUC to measure accuracy."
+        },
+        "MAE": {
+            "variants": [],
+            "tokens": [
+                "ma",
+                "e"
+            ],
+            "definition": "Mean Absolute Error (MAE) is a measure of errors between paired observations expressing the same property. It's calculated as an average over all data points.",
+            "example": "In predictive models, MAE can be used to evaluate how closely predicted values match actual outcomes."
+        },
+        "CICD": {
+            "variants": [],
+            "tokens": [
+                "c",
+                "ic",
+                "d"
+            ],
+            "definition": "Continuous Integration and Continuous Deployment (CICD) is a development practice where code changes are automatically built, tested, and deployed to production environments.",
+            "example": "A developer pushes updates to the repository which triggers CICD pipelines for automatic testing and deployment."
+        },
+        "TF": {
+            "variants": [],
+            "tokens": [
+                "t",
+                "f"
+            ],
+            "definition": "TF stands for Transformer Flow, a neural network architecture designed primarily for natural language processing.",
+            "example": "TransformerFlow models are commonly used in machine translation tasks to understand and convert text from one language to another."
+        },
+        "AWS": {
+            "variants": [],
+            "tokens": [
+                "aw",
+                "s"
+            ],
+            "definition": "Amazon Web Services (AWS) is a comprehensive and widely adopted cloud services platform.",
+            "example": "Businesses use AWS for hosting their websites, data storage, and various other computing needs."
+        },
+        "Agents Model Context": {
+            "variants": [],
+            "tokens": [
+                "agents",
+                "model",
+                "context"
+            ],
+            "definition": "Agent'in Agent Communication Language is a protocol for AI agent interaction.",
+            "example": "Two or more artificial intelligence systems interact through agents in an ACML framework using the Agent Communication Language."
+        },
+        "Communication Autonomous": {
+            "variants": [],
+            "tokens": [
+                "communication",
+                "au",
+                "t",
+                "on",
+                "o",
+                "mo",
+                "us"
+            ],
+            "definition": "Model Communication in autonomous systems refers to self-organized, decentralized information exchange without central control.",
+            "example": "In a smart grid scenario, communication among distributed energy resources happens through model communication."
+        },
+        "Meanwhile Agent": {
+            "variants": [],
+            "tokens": [
+                "me",
+                "an",
+                "while",
+                "agent"
+            ],
+            "definition": "An agent is a software or hardware entity that performs tasks autonomously on behnerer's behalf",
+            "example": "The smart home system uses an AI assistant as its main control agent."
+        },
+        "Model Contex Protocol": {
+            "variants": [
+                "Model Context Protocol",
+                "Model Contexal Protcol"
+            ],
+            "tokens": [
+                "model",
+                "contex",
+                "protocol"
+            ],
+            "definition": "The Model Context Protocol facilitates communication between AI models by sharing contextual information.",
+            "example": "When discussing climate change, two AIs use the Model Context Protocol to share relevant data and insights."
+        },
+        "Deeper Insight": {
+            "variants": [],
+            "tokens": [
+                "dee",
+                "per",
+                "in",
+                "si",
+                "ght"
+            ],
+            "definition": "The Deep Learning model context provides insights into how neural networks process and learn from data.",
+            "example": "Researchers analyze a deep learning network' extrinsic behavior to understand feature importance."
+        },
+        "Collaborative Protocols The": {
+            "variants": [],
+            "tokens": [
+                "collabor",
+                "ative",
+                "protocols",
+                "the"
+            ],
+            "definition": "Collaborative Protocols refer to a set of rules and guidelines that govern interactions between multiple AI systems working together.",
+            "example": "In multi-agent environments, several intelligent agents follow Collaborative Protocols for effective teamwork."
+        },
+        "Convolutional Neural Networks": {
+            "variants": [],
+            "tokens": [
+                "convolution",
+                "al",
+                "neural",
+                "networks"
+            ],
+            "definition": "Convolutional Neural Network is a deep learning algorithm that can take in an input image, assign importance to various aspects of that image and differentiate one object from another.",
+            "example": "In facial recognition systems, Convolutional Neural Networks are used for identifying unique features."
+        },
+        "Recurrent Neural Networks": {
+            "variants": [],
+            "tokens": [
+                "recurr",
+                "ent",
+                "neural",
+                "networks"
+            ],
+            "definition": "Recurrent Neural Network (RNN) is a type of artificial neural network designed to recognize patterns in sequences, such as time series or speech.",
+            "example": "In language translation tasks, RNN models are used because they can capture the context and order."
+        },
+        "Future Directions The": {
+            "variants": [],
+            "tokens": [
+                "f",
+                "ut",
+                "ure",
+                "di",
+                "re",
+                "c",
+                "tions",
+                "the"
+            ],
+            "definition": "Future Directions refer to potential developments and emerging trends in a field.",
+            "example": "Researchers are exploring future directions for quantum computing, such as error correction techniques."
+        },
+        "Deep Learning Neural": {
+            "variants": [],
+            "tokens": [
+                "deep",
+                "learning",
+                "neural"
+            ],
+            "definition": "Deep learning neural networks are artificial intelligence models designed for pattern recognition, built as layered structures.",
+            "example": "In image classification tasks, deep learning algorithms analyze visual patterns to identify objects."
+        },
+        "Networks Applications": {
+            "variants": [],
+            "tokens": [
+                "networks",
+                "ap",
+                "pl",
+                "ication",
+                "s"
+            ],
+            "definition": "Network applications are software programs that run on a network and provide services to users.",
+            "example": "Email clients, web browsers, and instant messaging apps are examples of network applications."
+        },
+        "Architectures Deep": {
+            "variants": [],
+            "tokens": [
+                "architectures",
+                "deep"
+            ],
+            "definition": "Deep architectures in artificial intelligence involve complex structures, often neural networks, to process data and make decisions.",
+            "example": "Neural network models with multiple hidden layers are examples of deep AI architectures."
+        },
+        "Efficient Net Efficient": {
+            "variants": [],
+            "tokens": [
+                "efficient",
+                "net",
+                "efficient"
+            ],
+            "definition": "EfficientNet, a model family designed for efficiency and accuracy in deep learning.",
+            "example": "Researchers use EfficientNets to train models with high performance on limited resources."
+        },
+        "Neural Networks": {
+            "variants": [],
+            "tokens": [
+                "neural",
+                "networks"
+            ],
+            "definition": "A neural network, also known as an artificial neural network (ANN), is a computing system inspired by biological neural networks. It consists of interconnected processing nodes that work together to solve specific problems.",
+            "example": "In image recognition tasks, convolutional neural networks are used."
+        },
+        "Long Short": {
+            "variants": [],
+            "tokens": [
+                "l",
+                "ong",
+                "sh",
+                "or",
+                "t"
+            ],
+            "definition": "The Long Short-Term Memory (LSTM) network is a type of recurrent neural network that can learn and remember over long sequences, making it effective for tasks involving sequential data. It was developed to address the vanishing gradient problem in traditional RNNs.",
+            "example": "In natural language processing, LSTM networks are used to understand context in sentences by analyzing word order."
+        },
+        "Term Memory": {
+            "variants": [],
+            "tokens": [
+                "ter",
+                "m",
+                "me",
+                "m",
+                "ory"
+            ],
+            "definition": "Memory in computing refers to a system or component that stores data.",
+            "example": "The computer's hard drive is used as its memory storage, saving files and applications for later use."
+        },
+        "Long Short Term": {
+            "variants": [],
+            "tokens": [
+                "l",
+                "ong",
+                "sh",
+                "or",
+                "t",
+                "ter",
+                "m"
+            ],
+            "definition": "Long Short-Term Memory (LSTM) is a type of recurrent neural network architecture used for processing sequences.",
+            "example": "In natural language processing, LSTMs are utilized to understand and generate human languages."
+        },
+        "Gated Recurrent Units": {
+            "variants": [],
+            "tokens": [
+                "g",
+                "ated",
+                "recurr",
+                "ent",
+                "un",
+                "i",
+                "ts"
+            ],
+            "definition": "Gated Recurrent Units (GRUs) are a type of recurrent neural network architecture that includes gating mechanisms to control information flow.",
+            "example": "In natural language processing tasks, GRUs can help in understanding context and sequence."
+        },
+        "Generative Adversarial Networks": {
+            "variants": [],
+            "tokens": [
+                "gener",
+                "ative",
+                "ad",
+                "ver",
+                "s",
+                "ari",
+                "al",
+                "networks"
+            ],
+            "definition": "Generative Adversarial Networks, or GANs, are a class of AI algorithms used in unsupervised machine learning.",
+            "example": "GANs can be trained to generate new images that resemble the training data."
+        },
+        "Machine Learning Preprocessing": {
+            "variants": [],
+            "tokens": [
+                "machine",
+                "learning",
+                "pre",
+                "processing"
+            ],
+            "definition": "Preprocessing in Machine Learning involves preparing raw data for use in a machine learning model.",
+            "example": "Data scientists preprocessed customer feedback into numerical scores before training the sentiment analysis algorithm."
+        },
+        "Common Algorithms Machine": {
+            "variants": [],
+            "tokens": [
+                "comm",
+                "on",
+                "al",
+                "gor",
+                "i",
+                "th",
+                "ms",
+                "machine"
+            ],
+            "definition": "Common Algorithms Machine refers to a computational system designed for executing basic algorithms.",
+            "example": "The Common Algorithms Machine efficiently executes sorting and searching tasks."
+        },
+        "Decision Tree": {
+            "variants": [],
+            "tokens": [
+                "decision",
+                "t",
+                "re",
+                "e"
+            ],
+            "definition": "A Decision Tree is a flowchart-like structure used for decision making, representing various decisions and their possible consequences.",
+            "example": "The company's marketing team uses the Decision Tree to decide on advertising strategies."
+        },
+        "Support Vector Machines": {
+            "variants": [],
+            "tokens": [
+                "suppor",
+                "t",
+                "ve",
+                "ct",
+                "or",
+                "mach",
+                "in",
+                "es"
+            ],
+            "definition": "Support Vector Machines (SVMs) are supervised learning models used for classification and regression tasks.",
+            "example": "An SVM is trained on a dataset to classify emails as spam or not."
+        },
+        "Principal Component Analysis": {
+            "variants": [],
+            "tokens": [
+                "pr",
+                "in",
+                "ci",
+                "p",
+                "al",
+                "comp",
+                "on",
+                "ent",
+                "an",
+                "aly",
+                "sis"
+            ],
+            "definition": "Principal Component Analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert observations of possibly correlated variables into a set of linearly uncorrelated variables called principal components.",
+            "example": "In image processing, PCA can be used for face recognition by reducing the dimensionality of facial images while retaining key features."
+        },
+        "Distributed Stochastic Neighbor": {
+            "variants": [],
+            "tokens": [
+                "dis",
+                "tr",
+                "ib",
+                "u",
+                "ted",
+                "s",
+                "to",
+                "ch",
+                "as",
+                "tic",
+                "ne",
+                "i",
+                "gh",
+                "b",
+                "or"
+            ],
+            "definition": "Distributed Stochastic Neighbor is a method used in machine learning to enhance model performance by training on decentralized data sources.",
+            "example": "The company uses Distributed Stochastic Neighbor for its recommendation system."
+        },
+        "Naive Bayes": {
+            "variants": [],
+            "tokens": [
+                "n",
+                "ai",
+                "ve",
+                "b",
+                "ay",
+                "es"
+            ],
+            "definition": "Naive Bayes is a classification algorithm based on applying Bayes' theorem with strong independence assumptions between the features.",
+            "example": "In spam detection, Naive Bayes can be used to classify emails as either 'spam' or 'not spam.'"
+        },
+        "Artificial Neural Networks": {
+            "variants": [],
+            "tokens": [
+                "ar",
+                "ti",
+                "fici",
+                "al",
+                "neural",
+                "networks"
+            ],
+            "definition": "Artificial Neural Networks (ANN) are computing systems inspired by biological neural networks, used for pattern recognition and data classification.",
+            "example": "ANN is often employed in image and speech recognition tasks."
+        },
+        "Platform Azure": {
+            "variants": [],
+            "tokens": [
+                "pl",
+                "at",
+                "form",
+                "a",
+                "z",
+                "ure"
+            ],
+            "definition": "Azure Platform provides cloud services for building, deploying and managing applications.",
+            "example": "Companies use Azure to host their web apps in a secure and scalable environment."
         }
     }
 }

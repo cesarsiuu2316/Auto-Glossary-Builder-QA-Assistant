@@ -10,10 +10,10 @@ def clean_text_as_list(text):
     cleaned_text = re.sub(r'\s+', ' ', cleaned_text).strip()
     # Regex patterns for different term formats
     snake_case_pattern = r'\b[a-z]+(?:_[a-z]+)+\b' # lowercase with underscores with 2 or more words
-    hyphen_pattern = r'\b[a-zA-Z]+(?:-[a-zA-Z]+)+\b' # hyphenated terms with 2 or more words
+    hyphen_pattern = r'\b[a-zA-Z]+(?:-[a-zA-Z0-9]+)+\b' # hyphenated terms with 2 or more words
     camel_case_pattern = r'\b(?:[A-Z][a-z0-9]+){2,}\b' # Uppercase words without spaces with 2 or more words
     acronym_pattern = r'\b[A-Z]{2,}\b' # Uppercase acronyms with 2 or more letters
-    proper_case_multiword = r'\b(?:[A-Z][a-z]+\s){1,2}[A-Z][a-z]+\b' # Multi-word terms with proper case
+    proper_case_multiword = r'\b(?:[A-Z][a-z0-9]+\s){1,2}[A-Z][a-z]+\b' # Multi-word terms with proper case
 
     # Find all matches for the patterns but avoid duplicate detection in terms in the same span (position)
     patterns = [snake_case_pattern, hyphen_pattern, camel_case_pattern, acronym_pattern, proper_case_multiword]

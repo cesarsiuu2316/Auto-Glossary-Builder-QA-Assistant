@@ -37,14 +37,32 @@ def convert_glossary_to_json(entry_list):
 
 
 def main():
-    corpus = read_text_files_as_strings(CORPUS_PATH)  # Read the corpus text
-
+    corpus = read_text_files_as_strings(CORPUS_PATH)  # Read the corpus text files
     terms = clean_text_as_list(corpus)  # Extract terms from the corpus
-    print(f"Extracted {len(terms)} potential terms from the corpus.")
-    print(f"Sample terms: {terms}")  # Print a sample of the extracted terms
-    #entry_list.append(entry)
-    #glossary_json = convert_glossary_to_json(entry_list)
-    #save_glossary_to_json(glossary_json, 'glossary.json')
+    terms_with_variants_dict = get_terms_with_variants(terms)  # Get dictionary of terms with variants
+    terms = list(terms_with_variants_dict.keys())  # Extract the unique terms
+    tokenizer = train_tokenizer(corpus)  # Train the tokenizer on the corpus
+    tokenized_terms = tokenize_terms(tokenizer, terms)  # Tokenize the terms
+    definitions, examples = fetch_definitions_and_examples(terms)  # Fetch definitions and examples for the terms
+
+    Glossary = []  # Initialize an empty list to hold GlossaryEntry objects
+
+    i = 0
+    for term in terms:
+        variants = terms_with_variants_dict[term]["variants"]
+        tokens = tokenized_terms.get(term, {}).get("tokens", [])
+        entry = GlossaryEntry(
+            term=term,
+            variants=variants,
+            tokens=tokens,
+            definition=definitions[i] if i < len(definitions) else "",
+            example=examples[i] if i < len(examples) else ""
+        )
+        Glossary.append(entry)
+        i += 1
+
+    glossary_json = convert_glossary_to_json(Glossary)
+    save_glossary_to_json(glossary_json, 'glossary.json')
 
 
 if __name__ == "__main__":
