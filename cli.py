@@ -19,15 +19,20 @@ def cli(): # This is the main entry point for the click application
 
 @cli.command() # Converts the function into a click command
 @click.option('--count', default=10, help='Lists N entries in the glossary.')
-def list(count):
+def listw(count):
     """List N glossary entries."""
     if not GLOSSARY_DICT:
         click.echo("No glossary entries found.")
         return
-    else:
-        entries = list(GLOSSARY_DICT.get("Glossary", {}).items())[:count]
-        for term, value in entries:
-            click.echo(f"{term}:\t{len(value.get("variants", []))} variants")
+    # Get the entries from the glossary dictionary
+    entries = list(GLOSSARY_DICT.get("Glossary", {}).items())[:count]
+    # Print the header
+    click.echo(f"{'Term':<45} {'# of Variants'}")
+    click.echo("-" * 60)
+    # Print each entry with its term and number of variants
+    for term, value in entries:
+        variant_count = len(value.get('variants', []))
+        click.echo(f"{term:<45} {variant_count}")
 
 
 @cli.command() # Converts the function into a click command
