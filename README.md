@@ -16,7 +16,7 @@ This project uses **regex, levenshtein, bpe and ollama local models** to generat
 Auto-Glossary-Builder-QA-Assistant/
 ├── GlossaryEntry.py           # Class to manage glossary entries 
 ├── build_glossary.py          # Builds the glossary
-├── cli.py                     # Main script for training & generation
+├── cli.py                     # CLI for users using click library
 ├── requirements.txt           # Project dependencies
 ├── corpus/                    # txt files to build the glossary
 ├── utils/                     # Utility functions used by build_glossary
@@ -35,6 +35,7 @@ Auto-Glossary-Builder-QA-Assistant/
 ```bash
 git clone https://github.com/cesarsiuu2316/Auto-Glossary-Builder-QA-Assistant.git
 ```
+
 ---
 
 ### 2. Create and Activate a Virtual Environment
