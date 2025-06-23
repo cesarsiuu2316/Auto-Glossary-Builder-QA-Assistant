@@ -56,4 +56,18 @@ def train_tokenizer(corpus):
     )
     tokenizer.train_from_iterator([cleaned_corpus], trainer=trainer) # Train the tokenizer
     save_tokenizer_to_file(tokenizer)  # Save the trained tokenizer to a file
+    tokenizer.encode_bat
     return tokenizer  # Return the trained tokenizer
+
+
+# Tokenize terms using the tokenizer
+def tokenize_terms(tokenizer, terms):
+    if not tokenizer: # If tokenizer is not valid, return an empty dictionary
+        return {}
+
+    tokenized_terms = {} # Initialize a dictionary to hold tokenized terms
+    for term in terms:
+        tokenized_terms[term] = {
+            "tokens": tokenizer.encode(term).tokens,  # Get the tokens for the term
+        }
+    return tokenized_terms  # Return the dictionary of tokenized terms

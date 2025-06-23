@@ -3,9 +3,6 @@ from GlossaryEntry import GlossaryEntry
 import json
 
 
-TXT_FILE_PATHS = "corpus"
-
-
 def save_glossary_to_json(glossary, filename):
     with open(filename, 'w') as f:
         json.dump(glossary, f, indent=4)
@@ -20,7 +17,6 @@ def convert_glossary_to_json(entry_list):
 
 
 def main():
-    words = load_and_clean_corpus(TXT_FILE_PATHS)
 
     entry_list = []
     entry = GlossaryEntry(

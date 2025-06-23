@@ -12,6 +12,7 @@ def read_text_files_as_strings(file_path):
     return text
 
 
+# Clean text and save potential terms as a list
 def clean_text_as_list(text):
     # Remove non-alphanumeric characters except for spaces
     cleaned_text = re.sub(r'[^a-zA-Z0-9\s]', '', text)
@@ -24,6 +25,7 @@ def clean_text_as_list(text):
     return words
 
 
+# Load and clean the corpus from text files
 def load_and_clean_corpus(file_path):
     text = read_text_files_as_strings(file_path)
     return clean_text_as_list(text)
